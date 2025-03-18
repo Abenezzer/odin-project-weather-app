@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Weather Forcast</title>
-</head>
-<body>
-    <h1>Weather Forcast</h1>
+  </head>
+  <body>
+    <h1>Get Your Weather Frocast</h1>
+    
+    <form>
+        <input id="val" type="text" value="Addis Ababa" />
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div class="loading">
+      <h2>Loading ....</h2>
+    </div>
+
+    <div class="wrapper">
+      <div class="card">
+        <img src="./weather.webp" alt="Weather image" />
+        <div class="contents">
+          <p>Address: <span class="address"></span></p>
+          <p>Time Zone: <span class="time-zone"></span></p>
+          <p>Description: <span class="Description"></span></p>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

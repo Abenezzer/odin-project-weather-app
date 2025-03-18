@@ -4,15 +4,16 @@ async function getData(city = "london") {
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${API}`;
   const res = await fetch(url, { mode: "cors" });
   const data = await res.json();
-  return getSpecificData(data);
+  const specificData  = getSpecificData(data);
+  console.log(specificData);
 }
-
-getData("Adama");
 
 function getSpecificData(data) {
   return {
     address: data.resolvedAddress,
-    timeZone: data.timeZone,
+    timezone: data.timezone,
     description: data.description,
   };
 }
+
+getData('Adama');
