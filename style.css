@@ -24,12 +24,13 @@ body h1 {
   font-size: 42px;
   font-family: monospace;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 2px solid wheat;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 form {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,17 +67,19 @@ button {
   display: none;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .card {
   width: 350px;
+  /* max-height: 400px; */
   /* border: 3px solid tomato; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   background-color: tomato;
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
 }
 
 .card img {
@@ -88,12 +91,14 @@ button {
 .contents {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  color: wheat;
-  padding: 10px;
-  font-size: 20px;
+  /* gap: 3px; */
+  color: aqua;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .contents span {
   font-size: 16px;
+  font-weight: lighter;
 }
